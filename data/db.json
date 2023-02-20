@@ -1,0 +1,26 @@
+{
+    "orders": [
+        {
+            "id": "1",
+            "product": "SP 15 Submersible",
+            "specifications": [
+                "50m deep",
+                "30mm inductor's length",
+                "5hp"
+            ],
+            "requests": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, maiores! At quos quisquam soluta tempora est velit quod ullam, perferendis, recusandae amet delectus? Eum debitis molestiae assumenda deserunt iure vitae voluptates animi.",
+            "deliveryTime": "40 days" 
+        },
+        {
+            "id": "2",
+            "product": "SP 4 Submersible",
+            "specifications": [
+                "250m deep",
+                "30mm inductor's length",
+                "12hp"
+            ],
+            "requests": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, maiores! At quos quisquam soluta tempora est velit quod ullam, perferendis, recusandae amet delectus? Eum debitis molestiae assumenda deserunt iure vitae voluptates animi.",
+            "deliveryTime": "14 days"
+        }
+    ]
+}

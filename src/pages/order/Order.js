@@ -17,14 +17,14 @@ function Order() {
         {order && (
             <>
                 <h2 className="page-title">{order.product}</h2>
-                <p>To be Deliveried in {order.deliveryTime}</p>
+                    <p>To be Deliveried in {order.deliveryTime} days</p>
                     <h4>Specifications</h4>
                     {order.specifications.map(spec => (
                         <ul> 
-                            <li key={spec}>{spec}</li>
+                            <li key={order.id}>{spec}</li>
                         </ul>
                     ))}
-                <p>{order.requests}</p>
+                    <p>{order.requests}</p>
             </>
         )}
     </div> 

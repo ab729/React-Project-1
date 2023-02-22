@@ -2,6 +2,11 @@ import "./Order.css"
 import { Link } from 'react-router-dom'
 
 export default function Orders({orders}) {
+
+    if (orders.length === 0) {
+        return <div className="error">No orders matches the entered values</div>
+    }
+
     return ( 
         <div className="order-list">
             {orders.map(order => (

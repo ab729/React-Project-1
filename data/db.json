@@ -1,26 +1,46 @@
 {
-    "orders": [
-        {
-            "id": "1",
-            "product": "SP 15 Submersible",
-            "specifications": [
-                "50m deep",
-                "30mm inductor's length",
-                "5hp"
-            ],
-            "requests": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, maiores! At quos quisquam soluta tempora est velit quod ullam, perferendis, recusandae amet delectus? Eum debitis molestiae assumenda deserunt iure vitae voluptates animi.",
-            "deliveryTime": "40 days" 
-        },
-        {
-            "id": "2",
-            "product": "SP 4 Submersible",
-            "specifications": [
-                "250m deep",
-                "30mm inductor's length",
-                "12hp"
-            ],
-            "requests": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, maiores! At quos quisquam soluta tempora est velit quod ullam, perferendis, recusandae amet delectus? Eum debitis molestiae assumenda deserunt iure vitae voluptates animi.",
-            "deliveryTime": "14 days"
-        }
-    ]
+  "orders": [
+    {
+      "id": "1",
+      "product": "SP 15 Submersible",
+      "specifications": [
+        "50m deep",
+        "30mm inductor's length",
+        "5hp"
+      ],
+      "requests": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, maiores! At quos quisquam soluta tempora est velit quod ullam, perferendis, recusandae amet delectus? Eum debitis molestiae assumenda deserunt iure vitae voluptates animi.",
+      "deliveryTime": "40"
+    },
+    {
+      "id": "2",
+      "product": "SP 4 Submersible",
+      "specifications": [
+        "250m deep",
+        "30mm inductor's length",
+        "12hp"
+      ],
+      "requests": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, maiores! At quos quisquam soluta tempora est velit quod ullam, perferendis, recusandae amet delectus? Eum debitis molestiae assumenda deserunt iure vitae voluptates animi.",
+      "deliveryTime": "14"
+    },
+    {
+      "product": "Cg 125",
+      "specifications": [
+        "125cc",
+        "4gear"
+      ],
+      "requests": "red color preferred",
+      "deliveryTime": "20",
+      "id": "2bjF0Hk"
+    },
+    {
+      "product": "cg 150",
+      "specifications": [
+        "150cc",
+        "5 gear"
+      ],
+      "requests": "black golden",
+      "deliveryTime": "15",
+      "id": "ANp7srv"
+    }
+  ]
 }

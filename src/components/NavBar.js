@@ -14,7 +14,7 @@ export default function Navbar() {
                     <h1>Al-Nakhel Co. ltd</h1>
                 </Link>
                 <SearchBar></SearchBar>
-                <Link to="/create">make order</Link>
+                <Link to="/create">Make Order</Link>
             </nav>
         </div>
     )

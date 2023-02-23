@@ -2,7 +2,7 @@ import './Create.css'
 import { useEffect, useRef, useState } from 'react';
 import { useFetch } from '../../hooks/useFetch';
 import { useNavigate } from 'react-router-dom';
-
+import { useTheme } from '../../hooks/useTheme';
 
 export default function Create() {
     const [product, setProduct] = useState('')
@@ -12,6 +12,8 @@ export default function Create() {
     const [specifications, setSpec] = useState([])
     const specInput = useRef(null)
     const navigate = useNavigate()
+    const { mode, color } = useTheme()
+    
     
 
     const { postData, data, error } = useFetch('http://localhost:3000/orders', 'POST')
@@ -38,13 +40,13 @@ export default function Create() {
     }, [data, navigate])
     return ( 
         <div className='create'>
-            <h2 className="page-title">Make a new odrer</h2>
+            <h2 className="page-title" style={{ color: mode === 'dark' ? 'white' : 'black' }}>Make a new odrer</h2>
 
 
             <form onSubmit={handleSubmit}>
 
                 <label>
-                    <span>Order name:</span>
+                    <span style={{ color: mode === 'dark' ? 'white' : 'black' }}>Order name:</span>
                     <input type="text"
                         onChange={e => setProduct(e.target.value)} 
                         value={product}
@@ -53,7 +55,7 @@ export default function Create() {
                 </label>
 
                 <label>
-                    <span>Order Specifictions:</span>
+                    <span style={{ color: mode === 'dark' ? 'white' : 'black' }}>Order Specifictions:</span>
                     <div className="spec">
                         <input
                          type="text"
@@ -61,13 +63,13 @@ export default function Create() {
                             value={newSpec}
                             ref={specInput}
                           />
-                        <button onClick={handleAdd}>add</button>
+                        <button onClick={handleAdd} style={{ backgroundColor: color }}>Add</button>
                     </div>  
                 </label>
-                <p>current specfications:- {specifications.map(element => <em key={element}>{element}, </em>)}</p>
+                <p style={{ color: mode === 'dark' ? 'white' : 'black' }}>current specfications:- {specifications.map(element => <em key={element}>{element}, </em>)}</p>
 
                 <label>
-                    <span>order specifications</span>
+                    <span style={{ color: mode === 'dark' ? 'white' : 'black' }}>order specifications</span>
                     <textarea
                         type="text"
                         onChange={ e => setRequests(e.target.value)}
@@ -77,7 +79,7 @@ export default function Create() {
                 </label>
 
                 <label>
-                    <span>Delivery time</span>
+                    <span style={{ color: mode === 'dark' ? 'white' : 'black' }}>Delivery time</span>
                     <input 
                         type="number" 
                         onChange={e=> setDeliveryTime(e.target.value)}
@@ -85,9 +87,8 @@ export default function Create() {
                         required
                     />
                 </label>
-                <button className='submit-btn'>Submit</button>
+                <button className='submit-btn' style={{backgroundColor: color}}>Submit</button>
             </form>
         </div>
      );
 }
-

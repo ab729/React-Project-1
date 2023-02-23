@@ -1,17 +1,19 @@
 import "./Order.css";
 import { useParams } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
+import { useTheme } from "../../hooks/useTheme";
 
 
 function Order() {
     const { id } = useParams();
     const url = 'http://localhost:3000/orders/' + id;
-    const { error, isPending, data: order} = useFetch(url);
+    const { error, isPending, data: order} = useFetch(url)
+    const { mode } = useTheme()
 
 
 
     return ( 
-    <div className="order">
+    <div className={`order ${mode}`}>
         {error && <p className="error">{error}</p>}
         {isPending && <p className="laoding">Loading...</p>}
         {order && (
@@ -21,7 +23,7 @@ function Order() {
                     <h4>Specifications</h4>
                     {order.specifications.map(spec => (
                         <ul> 
-                            <li key={order.id}>{spec}</li>
+                            <li key={order.id} className="page-spec">{spec}</li>
                         </ul>
                     ))}
                     <p>{order.requests}</p>

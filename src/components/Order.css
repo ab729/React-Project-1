@@ -50,3 +50,13 @@
     border-radius: 4px;
     margin: 20px auto 0;
 }
+
+/*    ----------- dark mode styles -----------*/
+.order-list .card.dark{
+    background: #555;
+}
+.order-list .card.dark p,
+.order-list .card.dark h3,
+.order-list .card.dark div {
+    color: #e4e4e4;
+}

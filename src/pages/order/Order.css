@@ -17,7 +17,7 @@
 .order li {
     list-style-type: none;
     margin-right: 10px;
-    color: #777;
+    color: #1f1e1e;
 }
 
 .order li::after {
@@ -32,3 +32,18 @@
     text-align: left;
     line-height: 1.5em;
 }
+
+.page-title {
+    color: black;
+}
+
+.order.dark {
+    background: #555;
+    color: #e4e4e4;
+}
+
+.order.dark .page-title,
+.order.dark .page-spec {
+    color: #e4e4e4;
+}
+
